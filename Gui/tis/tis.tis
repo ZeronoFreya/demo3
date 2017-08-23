@@ -1,7 +1,7 @@
 ﻿include "common.tis";
 self.ready = function() {
     //设置窗口居中
-    setWinToCenter(300,300);
+    setWinToCenter(800,600);
     //设置窗口置顶
     view.windowTopmost = true;
     // 加载或刷新deBug？
@@ -16,4 +16,14 @@ self.ready = function() {
 function clickCallBack(p1){
     $(footer>section).text = p1;
     return;
+}
+function creatPlaceholderImg(hl){
+    if (hl=="") return;
+    self.$(#pic-view).append(hl);
+}
+function setImgBg( d ){
+    var div = $(div[imgid="{d.id}"]);
+    if(div){
+        div.post( ::this.style#background-image = "url(" + d.fpath + ")" );
+    }
 }

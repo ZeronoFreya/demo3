@@ -19,3 +19,16 @@ button{
     padding: 20dip;
     text-align: center;
 }
+#pic-view{
+    size: *;
+    flow: horizontal-wrap;
+    overflow: auto;
+    border-spacing: 10dip;
+}
+.pic-view{
+    size: 200dip;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #ccc;
+}
